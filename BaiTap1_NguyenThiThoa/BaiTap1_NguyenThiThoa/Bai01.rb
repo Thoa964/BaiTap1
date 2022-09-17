@@ -1,1 +1,0 @@
-puts "Xin chào" +" "+ "Nguyễn Thị Thoa" +" "+ "1911505310165"
