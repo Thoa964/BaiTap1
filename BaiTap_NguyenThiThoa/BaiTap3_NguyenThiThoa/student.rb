@@ -10,6 +10,7 @@ class Student < Man
         @grade3 = grade3
         @average = (grade1 + grade2 + grade3)*0.1 /3
     end  
+    puts "Danh sách sinh viên chưa sắp xếp : \n"
     def show
         puts "Tên : #{name}\n  Giới tính: #{gender}\n  Tuổi: #{age}\n  Tóc: #{hair}\n  Chiều cao: #{height}\n  Cân nặng: #{height}\n  Số điện thoại: #{phone}\n  Email: #{email}\n  Dân tộc: #{nation}\n  Điểm trung bình: #{average}\n"
     end
@@ -28,6 +29,7 @@ a.each_index {
     |index|
     puts "#{a[index].show()}"
 }
+
 print "Danh sách sinh viên sau khi sắp xếp theo thứ tự giảm dần:\n"
 for x in a.sort_by{|stu|[-stu.average]} do
     puts "#{x.show}"
